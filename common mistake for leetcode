@@ -1,0 +1,17 @@
+# leetcode 常见的错误
+***
+
+## 错误一：
+Runtime Error
+=================================================================
+==29==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x603000000024 at pc 0x00000040187e bp 0x7fff0a7ca370 sp 0x7fff0a7ca368
+READ of size 4 at 0x603000000024 thread T0
+    #2 0x7f97a68d82e0 in __libc_start_main (/lib/x86_64-linux-gnu/libc.so.6+0x202e0)
+    .....................................
+    .........................
+    
+数组，栈，string，vector等可能越界了，查一查下标等地方是否越界。
+
+
+***
+## 错误二：
